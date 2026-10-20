@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.venv/
+venv/
+env/
+
+# Build artifacts
+frontend/dist/
+dist/
+build/
+
+# Python cache & databases
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+backend/food_packing.db
+*.db
+*.sqlite3
+.pytest_cache/
+
+# Environment and secrets
+.env
+backend/.env
+*.env.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

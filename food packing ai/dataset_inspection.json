@@ -1,0 +1,354 @@
+{
+  "Food Varieties": {
+    "shape": [
+      103,
+      12
+    ],
+    "columns": [
+      "food_id",
+      "food_name",
+      "food_category",
+      "moisture_level",
+      "oxygen_sensitivity",
+      "spoilage_risk",
+      "packaging_requirements",
+      "candidate_packaging",
+      "storage_handling_note",
+      "validation_priority",
+      "dataset_type",
+      "shelf_life_days"
+    ],
+    "null_counts": {
+      "food_id": 0,
+      "food_name": 0,
+      "food_category": 0,
+      "moisture_level": 0,
+      "oxygen_sensitivity": 0,
+      "spoilage_risk": 0,
+      "packaging_requirements": 0,
+      "candidate_packaging": 0,
+      "storage_handling_note": 0,
+      "validation_priority": 0,
+      "dataset_type": 0,
+      "shelf_life_days": 0
+    },
+    "dtypes": {
+      "food_id": "str",
+      "food_name": "str",
+      "food_category": "str",
+      "moisture_level": "str",
+      "oxygen_sensitivity": "str",
+      "spoilage_risk": "str",
+      "packaging_requirements": "str",
+      "candidate_packaging": "str",
+      "storage_handling_note": "str",
+      "validation_priority": "str",
+      "dataset_type": "str",
+      "shelf_life_days": "str"
+    },
+    "head_sample": [
+      {
+        "food_id": "F001",
+        "food_name": "Cooked rice",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Low",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Moisture-resistant, leak-proof container",
+        "candidate_packaging": "Food-grade PP container or suitable paper bowl with barrier lining",
+        "storage_handling_note": "Refrigerated promptly; keep hot foods hot during service",
+        "validation_priority": "High",
+        "dataset_type": "educational_seed_data",
+        "shelf_life_days": "NOT_PROVIDED\u2014requires product/process validation"
+      },
+      {
+        "food_id": "F002",
+        "food_name": "Biryani",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Medium",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Grease-resistant, leak-proof, heat-tolerant container",
+        "candidate_packaging": "Food-grade PP container; compartment tray if needed",
+        "storage_handling_note": "Hot holding or prompt refrigeration; validate delivery duration",
+        "validation_priority": "High",
+        "dataset_type": "educational_seed_data",
+        "shelf_life_days": "NOT_PROVIDED\u2014requires product/process validation"
+      },
+      {
+        "food_id": "F003",
+        "food_name": "Idli",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Low",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Moisture-retaining, food-contact-safe container",
+        "candidate_packaging": "Food-grade PP tray or suitable paper tray with barrier",
+        "storage_handling_note": "Avoid prolonged room-temperature storage",
+        "validation_priority": "High",
+        "dataset_type": "educational_seed_data",
+        "shelf_life_days": "NOT_PROVIDED\u2014requires product/process validation"
+      }
+    ]
+  },
+  "Packaging Materials": {
+    "shape": [
+      20,
+      10
+    ],
+    "columns": [
+      "material_id",
+      "material_or_format",
+      "format_type",
+      "moisture_barrier_general",
+      "oxygen_barrier_general",
+      "light_barrier_general",
+      "end_of_life_note",
+      "typical_examples",
+      "design_validation_note",
+      "dataset_type"
+    ],
+    "null_counts": {
+      "material_id": 0,
+      "material_or_format": 0,
+      "format_type": 0,
+      "moisture_barrier_general": 0,
+      "oxygen_barrier_general": 0,
+      "light_barrier_general": 0,
+      "end_of_life_note": 0,
+      "typical_examples": 0,
+      "design_validation_note": 0,
+      "dataset_type": 0
+    },
+    "dtypes": {
+      "material_id": "str",
+      "material_or_format": "str",
+      "format_type": "str",
+      "moisture_barrier_general": "str",
+      "oxygen_barrier_general": "str",
+      "light_barrier_general": "str",
+      "end_of_life_note": "str",
+      "typical_examples": "str",
+      "design_validation_note": "str",
+      "dataset_type": "str"
+    },
+    "head_sample": [
+      {
+        "material_id": "M001",
+        "material_or_format": "Glass",
+        "format_type": "Rigid container",
+        "moisture_barrier_general": "High",
+        "oxygen_barrier_general": "High",
+        "light_barrier_general": "High",
+        "end_of_life_note": "Fragile; heavier; can be reused/recycled where systems exist",
+        "typical_examples": "Jars, sauces, pickles, beverages",
+        "design_validation_note": "Check thermal shock and closure compatibility",
+        "dataset_type": "general_reference_not_a_certification"
+      },
+      {
+        "material_id": "M002",
+        "material_or_format": "PET",
+        "format_type": "Rigid plastic",
+        "moisture_barrier_general": "Medium",
+        "oxygen_barrier_general": "Medium",
+        "light_barrier_general": "Medium",
+        "end_of_life_note": "Lightweight; recycling depends on local system",
+        "typical_examples": "Bottles, produce clamshells",
+        "design_validation_note": "Use only food-contact grade and suitable application",
+        "dataset_type": "general_reference_not_a_certification"
+      },
+      {
+        "material_id": "M003",
+        "material_or_format": "HDPE",
+        "format_type": "Rigid plastic",
+        "moisture_barrier_general": "Medium",
+        "oxygen_barrier_general": "Medium",
+        "light_barrier_general": "Medium",
+        "end_of_life_note": "Lightweight; commonly recyclable in some systems",
+        "typical_examples": "Milk, oil, bulk containers",
+        "design_validation_note": "Confirm food-contact and product compatibility",
+        "dataset_type": "general_reference_not_a_certification"
+      }
+    ]
+  },
+  "AI Mapping": {
+    "shape": [
+      103,
+      13
+    ],
+    "columns": [
+      "food_id",
+      "food_name",
+      "food_category",
+      "moisture_level",
+      "oxygen_sensitivity",
+      "spoilage_risk",
+      "packaging_requirements",
+      "candidate_packaging",
+      "storage_handling_note",
+      "validation_priority",
+      "target_label",
+      "label_source",
+      "shelf_life_prediction_target"
+    ],
+    "null_counts": {
+      "food_id": 0,
+      "food_name": 0,
+      "food_category": 0,
+      "moisture_level": 0,
+      "oxygen_sensitivity": 0,
+      "spoilage_risk": 0,
+      "packaging_requirements": 0,
+      "candidate_packaging": 0,
+      "storage_handling_note": 0,
+      "validation_priority": 0,
+      "target_label": 0,
+      "label_source": 0,
+      "shelf_life_prediction_target": 0
+    },
+    "dtypes": {
+      "food_id": "str",
+      "food_name": "str",
+      "food_category": "str",
+      "moisture_level": "str",
+      "oxygen_sensitivity": "str",
+      "spoilage_risk": "str",
+      "packaging_requirements": "str",
+      "candidate_packaging": "str",
+      "storage_handling_note": "str",
+      "validation_priority": "str",
+      "target_label": "str",
+      "label_source": "str",
+      "shelf_life_prediction_target": "str"
+    },
+    "head_sample": [
+      {
+        "food_id": "F001",
+        "food_name": "Cooked rice",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Low",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Moisture-resistant, leak-proof container",
+        "candidate_packaging": "Food-grade PP container or suitable paper bowl with barrier lining",
+        "storage_handling_note": "Refrigerated promptly; keep hot foods hot during service",
+        "validation_priority": "High",
+        "target_label": "Food-grade PP container or suitable paper bowl with barrier lining",
+        "label_source": "expert-style illustrative seed label; verify before commercial use",
+        "shelf_life_prediction_target": "not included; requires lab/validated process data"
+      },
+      {
+        "food_id": "F002",
+        "food_name": "Biryani",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Medium",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Grease-resistant, leak-proof, heat-tolerant container",
+        "candidate_packaging": "Food-grade PP container; compartment tray if needed",
+        "storage_handling_note": "Hot holding or prompt refrigeration; validate delivery duration",
+        "validation_priority": "High",
+        "target_label": "Food-grade PP container; compartment tray if needed",
+        "label_source": "expert-style illustrative seed label; verify before commercial use",
+        "shelf_life_prediction_target": "not included; requires lab/validated process data"
+      },
+      {
+        "food_id": "F003",
+        "food_name": "Idli",
+        "food_category": "Prepared meal",
+        "moisture_level": "High",
+        "oxygen_sensitivity": "Low",
+        "spoilage_risk": "High",
+        "packaging_requirements": "Moisture-retaining, food-contact-safe container",
+        "candidate_packaging": "Food-grade PP tray or suitable paper tray with barrier",
+        "storage_handling_note": "Avoid prolonged room-temperature storage",
+        "validation_priority": "High",
+        "target_label": "Food-grade PP tray or suitable paper tray with barrier",
+        "label_source": "expert-style illustrative seed label; verify before commercial use",
+        "shelf_life_prediction_target": "not included; requires lab/validated process data"
+      }
+    ]
+  },
+  "AI Tasks": {
+    "shape": [
+      8,
+      5
+    ],
+    "columns": [
+      "task_id",
+      "ai_task",
+      "input_features",
+      "target_or_output",
+      "task_type"
+    ],
+    "null_counts": {
+      "task_id": 0,
+      "ai_task": 0,
+      "input_features": 0,
+      "target_or_output": 0,
+      "task_type": 0
+    },
+    "dtypes": {
+      "task_id": "str",
+      "ai_task": "str",
+      "input_features": "str",
+      "target_or_output": "str",
+      "task_type": "str"
+    },
+    "head_sample": [
+      {
+        "task_id": "T001",
+        "ai_task": "Food category classification",
+        "input_features": "food name / ingredients / image",
+        "target_or_output": "food_category",
+        "task_type": "classification"
+      },
+      {
+        "task_id": "T002",
+        "ai_task": "Packaging recommendation",
+        "input_features": "food category + moisture + fat + oxygen sensitivity + distribution",
+        "target_or_output": "candidate_packaging",
+        "task_type": "multi-class recommendation"
+      },
+      {
+        "task_id": "T003",
+        "ai_task": "Packaging requirement extraction",
+        "input_features": "product description",
+        "target_or_output": "packaging_requirements",
+        "task_type": "text classification / NLP"
+      }
+    ]
+  },
+  "Read Me": {
+    "shape": [
+      6,
+      2
+    ],
+    "columns": [
+      "Field",
+      "Details"
+    ],
+    "null_counts": {
+      "Field": 0,
+      "Details": 0
+    },
+    "dtypes": {
+      "Field": "str",
+      "Details": "str"
+    },
+    "head_sample": [
+      {
+        "Field": "Purpose",
+        "Details": "Starter dataset for a Food Packing Solutions AI project."
+      },
+      {
+        "Field": "Dataset scope",
+        "Details": "103 illustrative food varieties, 20 packaging material/format references, 103 food-to-packaging mappings, and 8 AI task definitions."
+      },
+      {
+        "Field": "Food safety",
+        "Details": "Packaging options are candidates only. Verify food-contact compliance, sealing, process compatibility, temperature requirements, and local regulations."
+      }
+    ]
+  }
+}
