@@ -27,7 +27,6 @@ services:
     name: food-packing-frontend
     runtime: static
     rootDir: "food packing ai/frontend"
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     routes:
